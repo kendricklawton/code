@@ -1,0 +1,17 @@
+[package]
+name = "sql_and_rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", features = ["serde"] }
+dotenvy = "0.15"
+sqlx = { version = "0.8", features = [
+  "runtime-tokio",
+  "postgres",
+  "macros",
+  "chrono",
+  "migrate",
+] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
