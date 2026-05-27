@@ -5,49 +5,6 @@ target/
 *.pdb
 **/mutants.out*/
 
-# ---- C / C++ ----
-*.o
-*.obj
-*.ko
-*.elf
-*.ilk
-*.map
-*.exp
-*.gch
-*.pch
-*.lib
-*.a
-*.la
-*.lo
-*.slo
-*.dll
-*.so
-*.so.*
-*.dylib
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-*.d
-*.su
-*.idb
-build/
-cmake-build-*/
-CMakeFiles/
-CMakeCache.txt
-CMakeScripts/
-cmake_install.cmake
-compile_commands.json
-.cache/
-.ccls-cache/
-.clangd/
-vcpkg_installed/
-conan.lock
-conanbuildinfo.*
-conaninfo.txt
-
 # ---- Go ----
 *.test
 *.prof
@@ -57,10 +14,15 @@ coverage.html
 vendor/
 go.work.sum
 
-# ---- Zig ----
-zig-cache/
-zig-out/
-.zig-cache/
+# ---- TypeScript / Node ----
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.eslintcache
+npm-debug.log*
+.npm/
 
 # ---- Secrets / env ----
 .env
